@@ -13,7 +13,7 @@ final class MusicDuckingManager {
             try session.setCategory(
                 .playAndRecord,
                 mode: .measurement,
-                options: [.defaultToSpeaker, .allowBluetooth, .duckOthers, .mixWithOthers]
+                options: [.defaultToSpeaker, .allowBluetoothHFP, .duckOthers, .mixWithOthers]
             )
             try session.setActive(true, options: [])
         } catch {
@@ -27,7 +27,7 @@ final class MusicDuckingManager {
                 try session.setCategory(
                     .playAndRecord,
                     mode: .measurement,
-                    options: [.defaultToSpeaker, .allowBluetooth, .mixWithOthers]
+                    options: [.defaultToSpeaker, .allowBluetoothHFP, .mixWithOthers]
                 )
                 try session.setActive(true, options: [])
             } catch {

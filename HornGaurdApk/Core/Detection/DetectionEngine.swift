@@ -1,5 +1,6 @@
 import Foundation
 import AVFoundation
+import CoreLocation
 import Combine
 
 /// Wires AudioCapture → (BandpassFilter + MelSpectrogram) + HornClassifier → TemporalValidator

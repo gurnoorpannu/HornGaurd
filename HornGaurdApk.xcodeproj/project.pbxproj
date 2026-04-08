@@ -29,9 +29,26 @@
 		FE1C58382F86165F00F36D75 /* HornGaurdApkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HornGaurdApkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FE1C594F2F862F2800F36D75 /* Exceptions for "HornGaurdApk" folder in "HornGaurdApk" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Resources/DemoSounds/car_horn_1.wav,
+				Resources/DemoSounds/dog_barking.mp3,
+				Resources/DemoSounds/human_shouting.mp3,
+				Resources/DemoSounds/truck_horn_1.mp3,
+				Resources/DemoSounds/truck_horn.wav,
+			);
+			target = FE1C58202F86165D00F36D75 /* HornGaurdApk */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		FE1C58232F86165D00F36D75 /* HornGaurdApk */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FE1C594F2F862F2800F36D75 /* Exceptions for "HornGaurdApk" folder in "HornGaurdApk" target */,
+			);
 			path = HornGaurdApk;
 			sourceTree = "<group>";
 		};

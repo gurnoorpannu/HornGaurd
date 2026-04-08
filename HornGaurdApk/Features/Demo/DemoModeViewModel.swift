@@ -1,4 +1,5 @@
 import Foundation
+import Combine
 import AVFoundation
 
 @MainActor
@@ -14,13 +15,11 @@ final class DemoModeViewModel: ObservableObject {
     /// User must drop matching .wav files into the project bundle.
     /// File names here are matched against bundled resources.
     let samples: [Sample] = [
-        .init(title: "Car horn",         fileName: "car_horn_1",        isHorn: true,  symbol: "car.fill"),
-        .init(title: "Truck horn",       fileName: "truck_horn",        isHorn: true,  symbol: "truck.box.fill"),
-        .init(title: "Auto-rickshaw",    fileName: "auto_rickshaw_horn", isHorn: true,  symbol: "car.2.fill"),
-        .init(title: "Bike horn",        fileName: "bike_horn",         isHorn: true,  symbol: "bicycle"),
-        .init(title: "Ambient traffic",  fileName: "ambient_traffic",   isHorn: false, symbol: "wind"),
-        .init(title: "Dog bark",         fileName: "dog_bark",          isHorn: false, symbol: "pawprint.fill"),
-        .init(title: "Human shout",      fileName: "human_shout",       isHorn: false, symbol: "person.wave.2.fill")
+        .init(title: "Car horn",      fileName: "car_horn_1",    isHorn: true,  symbol: "car.fill"),
+        .init(title: "Truck horn",    fileName: "truck_horn",    isHorn: true,  symbol: "truck.box.fill"),
+        .init(title: "Truck horn 2",  fileName: "truck_horn_1",  isHorn: true,  symbol: "truck.box.fill"),
+        .init(title: "Dog barking",   fileName: "dog_barking",   isHorn: false, symbol: "pawprint.fill"),
+        .init(title: "Human shout",   fileName: "human_shouting", isHorn: false, symbol: "person.wave.2.fill")
     ]
 
     @Published var nowPlaying: Sample?
