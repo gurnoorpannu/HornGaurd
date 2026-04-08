@@ -11,7 +11,7 @@ import SwiftUI
 struct HornGaurdApkApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootTabView()
         }
     }
 }
